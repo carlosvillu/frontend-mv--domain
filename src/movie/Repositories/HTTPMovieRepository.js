@@ -2,6 +2,7 @@ import MovieRepository from './MovieRepository'
 
 export default class HTTPMovieRepository extends MovieRepository {
   constructor({fetcher, config, movieListValueObjectFactory}) {
+    super()
     this._fetcher = fetcher
     this._config = config
     this._movieListValueObjectFactory = movieListValueObjectFactory
