@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@s-ui/lint": "2"
+    "@s-ui/lint": "2",
+    "@s-ui/test": "2.15.0"
   },
   "eslintConfig": {
     "extends": [

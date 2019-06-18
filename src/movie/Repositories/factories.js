@@ -1,8 +1,10 @@
 import MovieValueObjectsFactories from '../ValueObjects/factories'
-
+import MovieEntitiesFactories from '../Entities/factories'
 import FetcherFactories from '../../Fetcher/factories'
 
 import HTTPMovieRepository from './HTTPMovieRepository'
+
+
 
 export default class MovieRepositoriesFactories {
   static httpMovieRepository = ({config}) =>
@@ -11,7 +13,7 @@ export default class MovieRepositoriesFactories {
 
       movieListValueObjectFactory:
         MovieValueObjectsFactories.movieListValueObject,
-
+        movieEntityFactory: MovieEntitiesFactories.movieEntity,
       config
     })
 }
